@@ -55,4 +55,31 @@
         android:textColor="#03A9F4"
         android:textSize="30sp" />
 
+    <!-- Nút Mở Lab 1b -->
+    <Button
+        android:id="@+id/btnOpenActivityLab1b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab 1b"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Nút Mỏ Lab 2a -->
+    <Button
+        android:id="@+id/btnOpenActivityLab2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab 2a"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Nút Mở Lab 2b -->
+    <Button
+        android:id="@+id/btnOpenActivityLab2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab 2b"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
 </LinearLayout>

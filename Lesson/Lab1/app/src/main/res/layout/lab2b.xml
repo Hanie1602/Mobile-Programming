@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b5998"
+    android:padding="16dp">
+
+    <!-- 1. Logo Facebook -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo_facebook"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 2. English · Change -->
+    <TextView
+        android:id="@+id/tvLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English · Change"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_below="@id/ivLogo"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 3. Email or Phone -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email or Phone"
+        android:background="@null"
+        android:textColorHint="#80FFFFFF"
+        android:layout_below="@id/tvLang"
+        android:layout_marginTop="80dp"/>
+
+    <!-- underline cho Email -->
+    <View
+        android:id="@+id/underlineEmail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="4dp"/>
+
+    <!-- 4. Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textColorHint="#80FFFFFF"
+        android:layout_below="@id/underlineEmail"
+        android:layout_marginTop="16dp"/>
+
+    <!-- underline cho Password -->
+    <View
+        android:id="@+id/underlinePassword"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="4dp"/>
+
+    <!-- 5. LOG IN button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="LOG IN"
+        android:textAllCaps="true"
+        android:textColor="#80FFFFFF"
+        android:backgroundTint="#657CA8"
+        android:layout_below="@id/underlinePassword"
+        android:layout_marginTop="24dp"/>
+
+    <!-- 6. Sign Up for Facebook -->
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up for Facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_above="@+id/llForgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 7. Forgot Password + icon -->
+    <LinearLayout
+        android:id="@+id/llForgot"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/tvForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

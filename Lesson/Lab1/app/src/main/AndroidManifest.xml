@@ -22,6 +22,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ActivityLab1b"
+            android:exported="true"
+            android:theme="@style/Theme.Lab1">
+        </activity>
+
+        <activity
+            android:name=".ActivityLab2a"
+            android:exported="true"
+            android:theme="@style/Theme.Lab1">
+        </activity>
+
+        <activity
+            android:name=".ActivityLab2b"
+            android:exported="true"
+            android:theme="@style/Theme.Lab1">
+        </activity>
+
+        <activity
+            android:name=".ActivityLab2c"
+            android:exported="true"
+            android:theme="@style/Theme.Lab1">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_instagram_gradient"
+    android:padding="24dp">
+
+    <!-- Instagram logo -->
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="cursive"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvLogo"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        android:background="@drawable/bg_input_field"
+        android:padding="12dp"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#000000"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etUsername"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_input_field"
+        android:padding="12dp"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#000000"/>
+
+    <!-- Log In button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="24dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="#DDFFFFFF"
+        android:background="@drawable/bg_btn_login"/>
+
+    <!-- Forgot help text -->
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot your login details? Get help signing in."
+        android:textColor="#DDFFFFFF"
+        android:textSize="12sp"/>
+
+    <!-- OR divider -->
+    <LinearLayout
+        android:id="@+id/llOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvForgot"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:background="#DDFFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  OR  "
+            android:textColor="#DDFFFFFF"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:background="#DDFFFFFF"/>
+    </LinearLayout>
+
+    <!-- Log in with Facebook -->
+    <LinearLayout
+        android:id="@+id/llFb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/llOr"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_facebook_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Log in with Facebook"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Bottom Sign up -->
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Don't have an account? Sign up."
+        android:textColor="#DDFFFFFF"
+        android:textSize="12sp"/>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Tiêu đề nằm trên cùng -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:text="Linear Layout KPT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:padding="9dp"/>
+
+    <!-- Phần nội dung chia cột -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Cột 1 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F5F57C"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#848400"
+                android:text="2"
+                android:gravity="center"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <!-- Cột 2 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#DB98D6"
+                android:text="3"
+                android:gravity="center"
+                android:textSize="35sp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#FFF000"
+                android:text="4"
+                android:gravity="center"
+                android:textSize="35sp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#FF0000"
+                android:text="5"
+                android:gravity="center"
+                android:textSize="35sp"/>
+        </LinearLayout>
+
+        <!-- Cột 3 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:background="#A0522D"
+                android:text="6"
+                android:gravity="center"
+                android:textSize="45sp"/>
+
+            <TextView
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#F4C2C2"
+                android:text="7"
+                android:gravity="center"
+                android:textSize="45sp"/>
+        </LinearLayout>
+
+        <!-- Cột 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0000FF"
+            android:text="N\nod\neJ\nS"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
