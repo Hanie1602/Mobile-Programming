@@ -14,14 +14,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
-    // Views
+    // Views: Các View trong Layout
     private EditText etUsername;
     private EditText etPassword;
     private EditText etConfirmPassword;
     private TextView tvAlreadyAccount;
     private Button btnSignUp;
 
-    // Notify
+    // Notify: Thông báo lỗi khi để trống
     private final String REQUIRE = "Require";
 
     @Override
@@ -29,18 +29,19 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        // Reference from Layout
+        // Ánh xạ View từ Layout
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         etConfirmPassword = findViewById(R.id.etConfirmPassword);
         tvAlreadyAccount = findViewById(R.id.tvAlreadyAccount);
         btnSignUp = findViewById (R.id.btnSignUp);
 
-        // Register event
+        // Đăng ký sự kiện click
         tvAlreadyAccount.setOnClickListener(this);
         btnSignUp.setOnClickListener(this);
     }
 
+    //Check input không rỗng
     private boolean checkInput() {
         if (TextUtils.isEmpty(etUsername.getText().toString())) {
             etUsername.setError(REQUIRE);

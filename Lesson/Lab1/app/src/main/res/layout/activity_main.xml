@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Note:
+ - orientation="vertical": Sắp xếp từ trên xuống dưới
+ - orientation="horizontal": xếp theo chiều ngang (cột)
+ - match_parent cho cả chiều rộng và cao: chiếm toàn màn hình -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -82,4 +87,11 @@
         android:layout_marginTop="16dp"
         android:layout_gravity="center" />
 
+    <Button
+        android:id="@+id/btnOpenActivityLab2c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab 2c"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
 </LinearLayout>

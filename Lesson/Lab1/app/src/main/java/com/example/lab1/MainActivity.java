@@ -51,5 +51,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent2b);
         });
 
+        //Sau khi thiết lập btnOpenActivityLab2c
+        Button btnOpen2c = findViewById(R.id.btnOpenActivityLab2c);
+        btnOpen2c.setOnClickListener(v -> {
+            Intent intent2b = new Intent(MainActivity.this, ActivityLab2c.class);
+            startActivity(intent2b);
+        });
     }
 }

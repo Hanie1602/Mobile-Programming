@@ -12,12 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class SignInActivity extends AppCompatActivity implements View.OnClickListener{
-   //View
+   //View: Các View trong Layout
     private EditText etUsername;
     private EditText etPassword;
     private TextView tvNotAccountYet;
     private Button btnSignIn;
-    // Notify
+
+    // Notify: Thông báo lỗi khi để trống
     private final String REQUIRE = "Require";
 
     @Override
@@ -25,17 +26,18 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        // Reference from Layout
+        // Ánh xạ View từ Layout
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         tvNotAccountYet = findViewById(R.id.tvNotAccountYet);
         btnSignIn= findViewById(R.id.btnSignIn);
 
-        // Register event
+        // Đăng ký sự kiện click
         tvNotAccountYet.setOnClickListener(this);
         btnSignIn.setOnClickListener(this);
     }
 
+    //Check input không rỗng
     private boolean checkInput() {
         // Username
         if (TextUtils.isEmpty(etUsername.getText().toString())) {
@@ -53,19 +55,21 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         return true;
     }
 
+    //Xử lý đăng nhập
     private void signIn() {
-        // Invalid
+        // Nếu ko hợp lệ thì dừng
         if (!checkInput()) {
             return;
         }
 
-        // Start MainActivity
+        // Nếu hợp lệ thì chuyển sang CalculatorActivity
         Intent intent = new Intent(this, CalculatorActivity.class);
         startActivity(intent);
         finish(); // Close current activity
 
     }
 
+    //Mở form đăng ký
     private void signUpForm() {
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
@@ -76,9 +80,9 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.btnSignIn) {
-            signIn();
+            signIn();       // Nhấn nút SIGN IN
         } else if (id == R.id.tvNotAccountYet) {
-            signUpForm();
+            signUpForm();   // Nhấn dòng “Not Account Yet?”
         }
     }
 

@@ -93,7 +93,7 @@
         android:background="#EDE7F6"
         android:layout_marginTop="4dp"/>
 
-    <!-- Kết quả sẽ hiển thị ở TextView này, bạn có thể set text từ code -->
+    <!-- Kết quả sẽ hiển thị ở TextView -->
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="match_parent"

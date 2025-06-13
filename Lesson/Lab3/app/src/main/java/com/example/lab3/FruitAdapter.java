@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import java.util.List;
 
 public class FruitAdapter extends ArrayAdapter<Fruit> {
-    private final int resourceLayout;
+    private final int resourceLayout; //lưu ID của file layout XML
     private final Context mContext;
 
     public FruitAdapter(Context context, int resource, List<Fruit> items) {
@@ -30,7 +30,11 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
             LayoutInflater vi = LayoutInflater.from(mContext);
             v = vi.inflate(resourceLayout, parent, false);
         }
+
+        //Lấy dữ liệu tại vị trí (position)
         Fruit f = getItem(position);
+
+        //Ánh xạ và gán giá trị
         if (f != null) {
             ImageView img = v.findViewById(R.id.imgFruit);
             TextView name = v.findViewById(R.id.tvName);
@@ -43,3 +47,9 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
     }
 }
 
+//Note:
+//Khi ListView cần một dòng hiển thị, nó gọi getView(position, convertView, parent)
+//Adapter tái sử dụng convertView nếu có, hoặc inflate layout mới nếu chưa có
+//Lấy đối tượng Fruit tương ứng với position
+//Gán ảnh, tên, mô tả của Fruit vào các view con
+//Trả về View hiển thị
