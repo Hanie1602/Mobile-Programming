@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/textViewTitleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cập Nhật Công Việc"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- EditText nhập công việc -->
+    <EditText
+        android:id="@+id/editTextTenCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitleEdit"
+        android:layout_marginTop="12dp"
+        android:hint="Nhập tên công việc"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Nút Xác nhận -->
+    <Button
+        android:id="@+id/buttonXacNhan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTenCV"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonHuyEdit"
+        android:layout_weight="1"
+        android:layout_alignBaseline="@+id/buttonHuyEdit"
+        android:layout_alignBottom="@+id/buttonHuyEdit"
+        android:text="XÁC NHẬN"
+        android:backgroundTint="#8000FF"
+        android:textColor="#FFFFFF" />
+
+    <!-- Nút Hủy -->
+    <Button
+        android:id="@+id/buttonHuyEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTenCV"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="HỦY"
+        android:backgroundTint="#8000FF"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
