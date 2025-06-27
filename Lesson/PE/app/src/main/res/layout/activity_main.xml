@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sinh viên"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ListView hiển thị danh sách sinh viên -->
+    <ListView
+        android:id="@+id/lvSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="8dp"/>
+
+    <!-- FloatingActionButton -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <!-- Thêm sinh viên -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddSv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Thêm sinh viên"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="@color/purple_500"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Xem danh sách ngành -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabViewNganh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Xem danh sách ngành"
+            android:src="@android:drawable/ic_menu_view"
+            app:backgroundTint="@color/purple_500"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

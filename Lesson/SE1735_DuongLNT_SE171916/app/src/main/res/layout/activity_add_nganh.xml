@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitleAddNganh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm ngành học"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ô nhập tên ngành -->
+    <EditText
+        android:id="@+id/edtNganh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên ngành học" />
+
+    <!-- Nút lưu -->
+    <Button
+        android:id="@+id/btnSaveNganh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu ngành học"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
